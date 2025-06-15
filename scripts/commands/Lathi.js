@@ -1,11 +1,11 @@
 module.exports.config = {
-  name: "lathi", 
+  name: " kick", 
   version: "1.0.0", 
   permission: 0,
   credits: "Md Shourov Islam",
   description: "",
   prefix: true,
-  category: "lathi", 
+  category: "kick", 
   usages: "user", 
   cooldowns: 5,
   dependencies: {
@@ -21,7 +21,7 @@ module.exports.onLoad = async() => {
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { downloadFile } = global.utils;
     const dirMaterial = __dirname + `/cache/`;
-    const path = resolve(__dirname, 'cache', 'f42748b1-d7d5-4a32-87bc-621deb1a7ec8.jpeg');
+    const path = resolve(__dirname, 'cache', 'file_00000000e43c61f5abda9f0b69b44a74.png);
     if (!existsSync(dirMaterial + "")) mkdirSync(dirMaterial, { recursive: true });
     if (!existsSync(path)) await downloadFile("https://i.imgur.com/BtSlsSS.jpg", path);
 
@@ -34,7 +34,7 @@ async function makeImage({ one, two }) {
     const jimp = global.nodemodule["jimp"];
     const __root = path.resolve(__dirname, "cache");
 
-    let hon_img = await jimp.read(__root + "/f42748b1-d7d5-4a32-87bc-621deb1a7ec8.jpeg");
+    let hon_img = await jimp.read(__root + "/file_00000000e43c61f5abda9f0b69b44a74.png);
     let pathImg = __root + `/hon_${one}_${two}.png`;
     let avatarOne = __root + `/avt_${one}.png`;
     let avatarTwo = __root + `/avt_${two}.png`;
