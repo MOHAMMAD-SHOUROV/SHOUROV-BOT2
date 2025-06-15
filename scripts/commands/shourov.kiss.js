@@ -21,7 +21,7 @@ module.exports.onLoad = async() => {
     const { existsSync, mkdirSync } = global.nodemodule["fs-extra"];
     const { downloadFile } = global.utils;
     const dirMaterial = __dirname + `/cache/`;
-    const path = resolve(__dirname, 'cache', 'hon.png');
+    const path = resolve(__dirname, 'cache', 'IMG-20250615-WA0012.jpg');
     if (!existsSync(dirMaterial + "")) mkdirSync(dirMaterial, { recursive: true });
     if (!existsSync(path)) await downloadFile("https://i.imgur.com/BtSlsSS.jpg", path);
 
