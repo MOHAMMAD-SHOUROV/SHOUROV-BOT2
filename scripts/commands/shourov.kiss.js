@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "kisss", 
   version: "1.0.0", 
-  permission: 2,
+  permission: 0,
   credits: "Md Shourov Islam",
   description: "",
   prefix: true,
